@@ -68,23 +68,13 @@
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">สินค้า <span>*</span></label>
-                                        <select class="form-select">
-                                            <option selected></option>
-                                            <option value="1"></option>
-                                            <option value="2"></option>
-                                            <option value="3"></option>
-                                        </select>
+                                        <input type="text" class="form-control" name="product_name" value="" />
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">รุ่น <span>*</span></label>
-                                        <select class="form-select">
-                                            <option selected></option>
-                                            <option value="1"></option>
-                                            <option value="2"></option>
-                                            <option value="3"></option>
-                                        </select>
+                                        <input type="text" class="form-control" name="product_name" value="" />
                                     </div>
                                 </div>
                             </div>
@@ -106,12 +96,7 @@
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label class="form-label">ร้านที่ซื้อ <span>*</span></label>
-                                        <select class="form-select">
-                                            <option selected></option>
-                                            <option value="1"></option>
-                                            <option value="2"></option>
-                                            <option value="3"></option>
-                                        </select>
+                                        <input type="text" class="form-control" name="product_name" value="" />
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">

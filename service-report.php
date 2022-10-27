@@ -35,19 +35,25 @@
                         </div>
                         <form action="">
                             <div class="row">
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-3">
                                     <div class="mb-3">
-                                        <label class="form-label">ชื่อ-นามสกุล <span>*</span></label>
-                                        <input type="text" class="form-control">
+                                        <label class="form-label">ชื่อ <span>*</span></label>
+                                        <input type="text" name="name" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-3">
+                                    <div class="mb-3">
+                                        <label class="form-label">นามสกุล <span>*</span></label>
+                                        <input type="text" name="surname" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
                                     <div class="mb-3">
                                         <label class="form-label">เบอร์โทร<span>*</span></label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="telephone" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-12 col-md-3">
                                     <div class="mb-3">
                                         <label class="form-label">วันที่<span>*</span></label>
                                         <div id="datepicker" class="installation input-group date" data-date-format="dd-mm-yyyy">
@@ -153,14 +159,14 @@
                                 <div class="col-12">
                                     <h5>ผลการให้บริการ</h5>
                                     <div class="row">
-                                        <div class="form-check form-check-inline col-12">
-                                            <input class="form-check-input" type="checkbox" id="4" value="option4">
-                                            <label class="form-check-label" for="repairCheckbox4">เรียบร้อยใชงานได้ปกติ</label>
+                                        <div class="form-radio form-radio-inline col-12">
+                                            <input class="form-radio-input" type="radio" name="result_type" value="sucess">
+                                            <label class="form-radio-label">เรียบร้อยใชงานได้ปกติ</label>
                                         </div>
-                                        <div class="form-check form-check-inline col-12">
-                                            <input class="form-check-input" type="checkbox" id="5" value="option5">
-                                            <label class="form-check-label" for="repairCheckbox5">ยังไม่เรียบร้อย</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                        <div class="form-radio form-radio-inline col-12">
+                                            <input class="form-radio-input" type="radio" name="result_type" value="fail">
+                                            <label class="form-radio-label">ยังไม่เรียบร้อย</label>
+                                            <textarea class="form-control" name="result_type_not_good" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
