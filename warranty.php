@@ -10,6 +10,12 @@
 
     <?php require('inc_menu.php'); ?>
 
+    <?php if (isset($_POST['serial_number'])): ?>
+        <?php
+            echo "OK";
+        ?>
+    <?php endif; ?>
+
     <div class="wrapper">
         <div class="container">
             <div class="row">
@@ -21,13 +27,15 @@
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             </div>
                             <div class="col-right">
-                                <div class="form-group has-search">
-                                    <span class="fa fa-search form-control-feedback"></span>
-                                    <input type="text" class="form-control" placeholder="Search serial number">
-                                </div>
+                                <form action="warranty.php" method="POST">
+                                    <div class="form-group has-search">
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input type="text" id="serial_number" name="serial_number" class="form-control" placeholder="Search serial number">
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <form action="">
+                        <form action="warranty_save.php" method="POST">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
@@ -218,6 +226,7 @@
                     </div>
                 </div>
             </div>
+            </form>
         </div>
     </div>
 
